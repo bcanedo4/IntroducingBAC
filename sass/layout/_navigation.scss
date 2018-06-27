@@ -1,0 +1,58 @@
+.navigation {
+    &__checkbox {
+        display: none;
+    }
+
+    &__button--box {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        justify-content: space-between;
+        top: 3rem;
+        left: 3rem;
+        width: 6rem;
+    }
+
+    &__button {
+
+        &--large {
+            background-color: #fff;
+            height: 2rem;
+            width: 2rem;
+            
+            border-radius: 50%;
+            z-index: 2000;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        &--medium {
+            background-color: #fff;
+            height: 1.25rem;
+            width: 1.25rem;
+            
+            border-radius: 50%;
+            z-index: 2000;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        &--small {
+            background-color: #fff;
+            height: .7rem;
+            width: .7rem;
+            
+            border-radius: 50%;
+            z-index: 2000;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        
+    }
+
+    &__icon {
+        position: relative;
+        margin-top: 3.5rem;
+    }
+}

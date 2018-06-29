@@ -4,8 +4,16 @@
     width: 100vw;
     justify-content: space-evenly;
 
-    // @include respond(tab-port) {
-    //     flex-direction: column;
+    @include respond(phone) {
+        flex-direction: column;
+        margin-top: 14rem;
+        padding-right: 2rem;
+        justify-content: start;
+        align-items: center;
+    }
+
+    // @include respond(phone) {
+        
     // }
 
     &--left {
@@ -14,6 +22,11 @@
         flex-direction: column;
         justify-content: center;
         position: relative;
+
+        @include respond(phone) {
+            // align-self: start;
+            // margin-left: 3rem;
+        }
     
     }
 
@@ -29,11 +42,20 @@
         @include respond(tab-land) {
             width: 36rem;
         }
-        // breakpoints here
+
+        @include respond(phone) {
+            position: static;
+            top: auto;
+            left: auto;
+            transform: translate(0, 0);
+            // width: 50%;
+            
+            // text-align: justify;
+        }
     }
 
     &--right {
-        width: 50%;
+        width: 50%; // Necessary for desktop view
         position: relative;
 
     }
@@ -68,6 +90,18 @@
         @include respond(tab-land) {
             height: 52rem;
             width: 36rem;
+        }
+
+        @include respond(tab-port) {
+            height: 46rem;
+            width: 30rem;
+        }
+
+        @include respond(phone) {
+            position: static;
+            transform: translate(0, 0);
+            height: 27rem;
+            width: 19rem;
         }
     }
 }

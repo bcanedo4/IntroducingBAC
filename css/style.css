@@ -46,7 +46,7 @@ body {
   @media only screen and (max-width: 43.75em) {
     .container {
       flex-direction: column;
-      margin-top: 14rem;
+      margin-top: 10rem;
       padding-right: 2rem;
       justify-content: start;
       align-items: center; } }
@@ -66,7 +66,7 @@ body {
     text-align: left; }
     @media only screen and (max-width: 68.75em) {
       .container__info {
-        width: 36rem; } }
+        width: 24rem; } }
     @media only screen and (max-width: 43.75em) {
       .container__info {
         position: static;
@@ -119,6 +119,9 @@ body {
   top: 3rem;
   left: 3rem;
   width: 6rem; }
+  @media only screen and (max-width: 43.75em) {
+    .navigation__button--box {
+      width: 4rem; } }
 
 .navigation__button--large {
   background-color: #fff;
@@ -128,6 +131,10 @@ body {
   z-index: 2000;
   text-align: center;
   cursor: pointer; }
+  @media only screen and (max-width: 43.75em) {
+    .navigation__button--large {
+      height: 1.5rem;
+      width: 1.5rem; } }
 
 .navigation__button--medium {
   background-color: #fff;
@@ -137,6 +144,10 @@ body {
   z-index: 2000;
   text-align: center;
   cursor: pointer; }
+  @media only screen and (max-width: 43.75em) {
+    .navigation__button--medium {
+      height: .75rem;
+      width: .75rem; } }
 
 .navigation__button--small {
   background-color: #fff;
@@ -146,6 +157,10 @@ body {
   z-index: 2000;
   text-align: center;
   cursor: pointer; }
+  @media only screen and (max-width: 43.75em) {
+    .navigation__button--small {
+      height: .2rem;
+      width: .2rem; } }
 
 .navigation__icon {
   position: relative;

@@ -6,7 +6,7 @@
 
     @include respond(phone) {
         flex-direction: column;
-        margin-top: 14rem;
+        margin-top: 10rem;
         padding-right: 2rem;
         justify-content: start;
         align-items: center;
@@ -25,7 +25,6 @@
 
         @include respond(phone) {
             // align-self: start;
-            // margin-left: 3rem;
         }
     
     }
@@ -40,7 +39,7 @@
         text-align: left;
 
         @include respond(tab-land) {
-            width: 36rem;
+            width: 24rem;
         }
 
         @include respond(phone) {

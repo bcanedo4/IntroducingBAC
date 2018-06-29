@@ -11,6 +11,10 @@
         top: 3rem;
         left: 3rem;
         width: 6rem;
+
+        @include respond(phone) {
+            width: 4rem;
+        }
     }
 
     &__button {
@@ -24,6 +28,11 @@
             z-index: 2000;
             text-align: center;
             cursor: pointer;
+
+            @include respond(phone) {
+                height: 1.5rem;
+                width: 1.5rem;
+            }
         }
 
         &--medium {
@@ -35,6 +44,11 @@
             z-index: 2000;
             text-align: center;
             cursor: pointer;
+
+            @include respond(phone) {
+                height: .75rem;
+                width: .75rem;
+            }
         }
 
         &--small {
@@ -46,6 +60,11 @@
             z-index: 2000;
             text-align: center;
             cursor: pointer;
+
+            @include respond(phone) {
+                height: .2rem;
+                width: .2rem;
+            }
         }
 
         

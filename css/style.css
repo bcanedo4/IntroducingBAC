@@ -81,7 +81,16 @@ body {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    position: relative; }
+    .container__icon--rect {
+      position: absolute;
+      height: 6rem;
+      width: 7rem;
+      -webkit-clip-path: polygon(0 0, 38% 0, 38% 32%, 0 32%);
+      clip-path: polygon(0 0, 38% 0, 38% 32%, 0 32%);
+      background-color: var(--color-primary);
+      transform: translate(16%, 26%); }
   .container__browser {
     position: absolute;
     top: 50%;

@@ -28,6 +28,9 @@ body {
   font-weight: 400;
   line-height: 1;
   color: #fff; }
+  @media only screen and (max-width: 68.75em) {
+    body {
+      font-size: 3rem; } }
 
 .u-bold {
   font-weight: 700; }
@@ -51,6 +54,9 @@ body {
     height: 30rem;
     width: 46rem;
     text-align: left; }
+    @media only screen and (max-width: 68.75em) {
+      .container__info {
+        width: 36rem; } }
   .container--right {
     width: 50%;
     position: relative; }
@@ -71,6 +77,10 @@ body {
     background-image: url(../img/bac-image.png);
     background-size: cover;
     background-repeat: no-repeat; }
+    @media only screen and (max-width: 68.75em) {
+      .container__browser {
+        height: 52rem;
+        width: 36rem; } }
 
 .navigation__checkbox {
   display: none; }

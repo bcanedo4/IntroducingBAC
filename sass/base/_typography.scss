@@ -5,5 +5,8 @@ body {
     line-height: 1;
     color: #fff;
 
+    @include respond(tab-land) {
+        font-size: 3rem;
+    }
     // breakpoints here
 }

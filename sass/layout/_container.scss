@@ -4,13 +4,15 @@
     width: 100vw;
     justify-content: space-evenly;
 
+    // @include respond(tab-port) {
+    //     flex-direction: column;
+    // }
+
     &--left {
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // flex-basis: 0 0 45%;
-        // background-color: red;
         position: relative;
     
     }
@@ -24,6 +26,9 @@
         width: 46rem;
         text-align: left;
 
+        @include respond(tab-land) {
+            width: 36rem;
+        }
         // breakpoints here
     }
 
@@ -60,5 +65,9 @@
         background-repeat: no-repeat;
     
         //breakpoints
+        @include respond(tab-land) {
+            height: 52rem;
+            width: 36rem;
+        }
     }
 }
